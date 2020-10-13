@@ -13,6 +13,7 @@ class NatalTest(TestCase):
     def test_template(self):
         self.assertTemplateUsed(self.resp, 'natal.html')    
 
+class CarnavalTest(TestCase):
     def setUp(self):
         self.resp = self.client.get('/carnaval')
 
@@ -25,6 +26,7 @@ class NatalTest(TestCase):
     def test_template(self):
         self.assertTemplateUsed(self.resp, 'carnaval.html')  
 
+class TiradentesTest(TestCase):
     def setUp(self):
         self.resp = self.client.get('/tiradentes')
 
